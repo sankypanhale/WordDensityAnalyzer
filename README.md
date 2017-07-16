@@ -1,7 +1,11 @@
 # WordDensityAnalyzer
-https://github.com/mjparangot/Word-Density-Analysis
+Courtesy: https://github.com/mjparangot/Word-Density-Analysis
 
-Node and Tree Structures
+I have used frequency of word(s) for density analysis of word.
+
+Used following data structures.
+
+#Node and Tree Structures
 
 For this I decided to create my own data structure built upon the HashMap data structure.
 
@@ -60,7 +64,7 @@ Example interpretations of this TREE:
 
 5 instances of "safeguard" 2 instances of "safeguard privacy" 1 instance of "safeguard privacy liberty" 2 instances of "privacy" 1 instance of "privacy liberty" 2 instances of "liberty"
 
-Keyword Extraction
+#Keyword Extraction
 
 In my implementation of the NODE/TREE structure, I created what is called a WordTree, made up of WordNodes that specifically hold a string keyword, and the size of which refers to the number of times that keyword appeared in the document.
 
@@ -101,3 +105,7 @@ and further in the tree their children who represent the keywords
 {"Edward Snowden", "United States", "free man"}
 
 After parsing the entire document and constructing the WordTree, the keyword's NODEs with the largest sizes represent keywords that appeared the most in the document. These keywords represent the most relevant topics found in the document.
+
+#Future Work
+
+Weighing of words can be done in better way. Words appearing in URL, Title can have more weight than regular tet words. 
